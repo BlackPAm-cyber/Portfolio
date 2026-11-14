@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mark Ken I. Martin – Computer Servicing</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&display=swap">
+<style>
+:root{
+  --bg:#070914;--surface:#0f1328;--ink:#eaf0ff;--muted:#8d97bd;--line:#232a52;--accent:#5cf0ff;--hl:#a66bff;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:dark;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#070914;--surface:#0f1328;--ink:#eaf0ff;--muted:#8d97bd;--line:#232a52;--accent:#5cf0ff;--hl:#a66bff;color-scheme:dark}
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);background-image:radial-gradient(600px 400px at 85% 8%,rgba(166,107,255,.22),transparent 70%),radial-gradient(500px 360px at 10% 30%,rgba(92,240,255,.12),transparent 70%),linear-gradient(rgba(92,240,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(92,240,255,.05) 1px,transparent 1px);background-size:auto,auto,44px 44px,44px 44px;color:var(--ink);font-family:"Sora",system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6;font-size:17px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:920px;margin:0 auto;padding:0 24px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;font-weight:600}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--ink)}
+.hero{padding:72px 0 64px;display:grid;grid-template-columns:1.3fr 1fr;gap:32px;align-items:center}
+.hero h1{font-size:clamp(2.4rem,8vw,5rem);line-height:.95;font-weight:800;letter-spacing:-.03em;margin:0 0 28px}
+.hero h1 span{background:linear-gradient(90deg,var(--accent),var(--hl));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:34rem;font-size:1.25rem;color:var(--muted);margin:0 0 32px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:8px;font-weight:600;text-decoration:none;border:2px solid var(--accent)}
+.btn.primary{background:linear-gradient(90deg,var(--accent),var(--hl));color:#070914;border-color:transparent}
+.btn:hover{transform:translateY(-2px)}
+section{padding:56px 0;border-top:1px solid var(--accent)}
+h2{font-size:1.9rem;margin:0 0 28px;letter-spacing:-.02em}
+.proj{display:grid;grid-template-columns:1fr;gap:18px}
+.card{background:rgba(15,19,40,.7);border:1px solid var(--line);border-radius:14px;padding:26px;box-shadow:0 0 24px rgba(92,240,255,.07),inset 0 1px 0 rgba(255,255,255,.05);backdrop-filter:blur(6px)}
+.card h3{margin:0 0 6px;font-size:1.3rem}
+.card p{margin:0 0 14px;color:var(--muted)}
+.tags{display:flex;gap:8px;flex-wrap:wrap;padding:0;margin:0;list-style:none}
+.tags li{font-size:.85rem;padding:3px 10px;border-radius:99px;background:var(--bg);border:1px solid var(--line);color:var(--accent)}
+.links{margin-top:14px;display:flex;gap:16px;font-weight:600}
+.links a{color:var(--accent)}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px}
+.skills h3{margin:0 0 8px;font-size:1rem;color:var(--muted);font-weight:600}
+.skills p{margin:0}
+.job{display:grid;grid-template-columns:9rem 1fr;gap:8px 24px;padding:18px 0;border-bottom:1px solid var(--line)}
+.job:last-child{border-bottom:0}
+.job time{color:var(--muted)}
+.job h3{margin:0;font-size:1.1rem}
+.job p{margin:4px 0 0;color:var(--muted)}
+footer{padding:40px 0 56px;border-top:1px solid var(--accent)}
+footer h2{margin-bottom:12px}
+footer p{margin:0 0 20px;color:var(--muted);max-width:32rem}
+@media (max-width:640px){
+  .job{grid-template-columns:1fr}
+  nav ul{gap:14px}.hero{grid-template-columns:1fr}.hero svg{max-width:300px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn:hover{transform:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav aria-label="Main">
+    <span>Mark Ken I. Martin</span>
+    <ul>
+      <li><a href="#projects">Services</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero"><div>
+    <h1>I keep your <span>computers</span> running.</h1>
+    <p>I’m Mark Ken I. Martin, a computer servicing technician. I install computers and software, check and fix hardware problems, and set up networks for homes and small businesses. I explain every fix in plain language so you know exactly what was done.</p>
+    <div class="btns">
+      <a class="btn primary" href="#projects">See my services</a>
+      <a class="btn" href="#contact">Get in touch</a>
+    </div>
+  </div><svg viewBox="0 0 320 250" role="img" aria-label="Computer monitor showing a passed system check" width="100%" style="max-width:380px;justify-self:center"><rect x="20" y="10" width="280" height="170" rx="10" fill="var(--surface)" stroke="var(--accent)" stroke-width="3"/><rect x="34" y="24" width="252" height="142" rx="4" fill="var(--bg)"/><g fill="var(--accent)"><circle cx="52" cy="52" r="6"/><circle cx="52" cy="82" r="6"/><circle cx="52" cy="112" r="6"/></g><g fill="var(--muted)"><rect x="68" y="48" width="120" height="8" rx="4"/><rect x="68" y="78" width="150" height="8" rx="4"/><rect x="68" y="108" width="100" height="8" rx="4"/></g><g fill="var(--accent)" font-size="12" font-weight="700"><text x="246" y="56">OK</text><text x="246" y="86">OK</text><text x="246" y="116">OK</text></g><rect x="52" y="138" width="216" height="10" rx="5" fill="var(--line)"/><rect x="52" y="138" width="180" height="10" rx="5" fill="var(--hl)"/><path d="M140 180h40l8 40h-56z" fill="var(--line)"/><rect x="100" y="220" width="120" height="10" rx="5" fill="var(--accent)"/></svg></header>
+
+  <section id="projects">
+    <h2>Services</h2>
+    <div class="proj">
+      <article class="card">
+        <h3>Computer and laptop repair</h3>
+        <p>Diagnosis and repair of hardware faults, including broken screens, failed drives, overheating, and boot problems. Most repairs are done within 1 to 3 days.</p>
+        <ul class="tags"><li>Desktops</li><li>Laptops</li><li>Screen replacement</li><li>Data recovery</li></ul>
+      </article>
+      <article class="card">
+        <h3>Software, virus removal, and tune-ups</h3>
+        <p>Operating system installs, virus and malware cleanup, driver updates, and speed tune-ups that make slow computers usable again.</p>
+        <ul class="tags"><li>Windows</li><li>macOS</li><li>Antivirus</li><li>Backups</li></ul>
+      </article>
+      <article class="card">
+        <h3>Network and office setup</h3>
+        <p>Wi-Fi and router setup, printer installation, CCTV and small office networks. On-site visits available for homes and businesses.</p>
+        <ul class="tags"><li>Wi-Fi</li><li>Routers</li><li>Printers</li><li>CCTV</li></ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div><h3>Computer installation</h3><p>Setting up new desktops and laptops, assembling parts, cabling, and first-time configuration</p></div>
+      <div><h3>Software installing</h3><p>Windows, macOS, Linux, Microsoft Office, drivers, and antivirus</p></div>
+      <div><h3>Computer checking</h3><p>Hardware and performance tests, health checks, and fault diagnosis</p></div>
+      <div><h3>Hardware repair</h3><p>Motherboards, RAM, SSDs, power supplies, laptop screens and keyboards</p></div>
+      <div><h3>Virus and malware removal</h3><p>Cleanup, system tune-ups, and protection setup</p></div>
+      <div><h3>Networking</h3><p>Routers, Wi-Fi, LAN cabling, printers, CCTV</p></div>
+      <div><h3>Data backup and recovery</h3><p>Backing up files and recovering data from failed drives</p></div>
+      <div><h3>Customer support</h3><p>Clear explanations and basic computer training for users</p></div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="job">
+      <time>2023 – Present</time>
+      <div><h3>Senior Technician, Northwind Computer Center</h3><p>Lead a team of four handling over 100 repairs a month. Cut average repair turnaround by 40%.</p></div>
+    </div>
+    <div class="job">
+      <time>2020 – 2023</time>
+      <div><h3>Computer Technician, Brightside IT Services</h3><p>Repaired and maintained computers and networks for small business clients.</p></div>
+    </div>
+    <div class="job">
+      <time>2018 – 2020</time>
+      <div><h3>Junior Technician, Pixel &amp; Pine Computers</h3><p>Handled hardware repairs, OS installs, and customer support at the service counter.</p></div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <h2>Let’s work together</h2>
+    <p>Need a repair, an upgrade, or a network setup? Send me a message and I’ll reply within a day.</p>
+    <div class="btns">
+      <a class="btn primary" href="mailto:martinken876@gmail.com">martinken876@gmail.com</a>
+      <a class="btn" href="#">GitHub</a>
+      <a class="btn" href="tel:+639491041213">Call or text 0949 104 1213</a>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
